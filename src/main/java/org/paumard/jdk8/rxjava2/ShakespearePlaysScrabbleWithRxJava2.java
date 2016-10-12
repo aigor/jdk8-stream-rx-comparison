@@ -18,14 +18,12 @@
 
 package org.paumard.jdk8.rxjava2;
 
-import io.reactivex.ObservableSource;
+import io.reactivex.Observable;
 import io.reactivex.functions.Function;
+import io.reactivex.schedulers.Schedulers;
 import org.openjdk.jmh.annotations.*;
 import org.paumard.jdk8.bench.ShakespearePlaysScrabble;
 import org.paumard.jdk8.util.IterableSpliterator;
-
-import io.reactivex.Observable;
-import io.reactivex.schedulers.Schedulers;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -33,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  *
- * @author José
+ * @author José, Igor Lozynskyin (ported to RxJava 2.0)
  */
 public class ShakespearePlaysScrabbleWithRxJava2 extends ShakespearePlaysScrabble {
 
